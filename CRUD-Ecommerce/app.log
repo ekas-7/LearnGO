@@ -1,0 +1,41 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /health                   --> main.setupRouter.func1 (6 handlers)
+[GIN-debug] POST   /api/v1/auth/register     --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*UserHandler).Register-fm (6 handlers)
+[GIN-debug] POST   /api/v1/auth/login        --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*UserHandler).Login-fm (6 handlers)
+[GIN-debug] GET    /api/v1/categories        --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*CategoryHandler).GetAll-fm (6 handlers)
+[GIN-debug] GET    /api/v1/categories/:id    --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*CategoryHandler).GetByID-fm (6 handlers)
+[GIN-debug] GET    /api/v1/products          --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*ProductHandler).GetAll-fm (6 handlers)
+[GIN-debug] GET    /api/v1/products/:id      --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*ProductHandler).GetByID-fm (6 handlers)
+[GIN-debug] GET    /api/v1/products/category/:categoryId --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*ProductHandler).GetByCategory-fm (6 handlers)
+[GIN-debug] GET    /api/v1/users/me          --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*UserHandler).GetProfile-fm (7 handlers)
+[GIN-debug] PUT    /api/v1/users/me          --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*UserHandler).UpdateProfile-fm (7 handlers)
+[GIN-debug] DELETE /api/v1/users/me          --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*UserHandler).DeleteAccount-fm (7 handlers)
+[GIN-debug] POST   /api/v1/products          --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*ProductHandler).Create-fm (8 handlers)
+[GIN-debug] PUT    /api/v1/products/:id      --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*ProductHandler).Update-fm (8 handlers)
+[GIN-debug] DELETE /api/v1/products/:id      --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*ProductHandler).Delete-fm (8 handlers)
+[GIN-debug] POST   /api/v1/categories        --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*CategoryHandler).Create-fm (8 handlers)
+[GIN-debug] PUT    /api/v1/categories/:id    --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*CategoryHandler).Update-fm (8 handlers)
+[GIN-debug] DELETE /api/v1/categories/:id    --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*CategoryHandler).Delete-fm (8 handlers)
+[GIN-debug] POST   /api/v1/orders            --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*OrderHandler).Create-fm (7 handlers)
+[GIN-debug] GET    /api/v1/orders            --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*OrderHandler).GetUserOrders-fm (7 handlers)
+[GIN-debug] GET    /api/v1/orders/:id        --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*OrderHandler).GetByID-fm (7 handlers)
+[GIN-debug] PUT    /api/v1/orders/:id/status --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*OrderHandler).UpdateStatus-fm (7 handlers)
+[GIN-debug] DELETE /api/v1/orders/:id        --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*OrderHandler).Cancel-fm (7 handlers)
+[GIN-debug] GET    /api/v1/orders/all        --> github.com/ekas-7/CRUD-Ecommerce/internal/handler.(*OrderHandler).GetAllOrders-fm (8 handlers)
+2025/12/31 14:01:51 Server starting on localhost:8080
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on localhost:8080
+[GET] /health 200 283.917µs
+[GIN] 2025/12/31 - 14:02:03 | 200 |     355.834µs |       127.0.0.1 | GET      "/health"
+[POST] /api/v1/auth/register 201 57.485542ms
+[GIN] 2025/12/31 - 14:03:28 | 201 |   57.718208ms |       127.0.0.1 | POST     "/api/v1/auth/register"
+[POST] /api/v1/auth/login 401 1.250666ms
+[GIN] 2025/12/31 - 14:05:04 | 401 |      1.4615ms |       127.0.0.1 | POST     "/api/v1/auth/login"
+[POST] /api/v1/auth/login 200 78.233375ms
+[GIN] 2025/12/31 - 14:06:11 | 200 |   78.408458ms |       127.0.0.1 | POST     "/api/v1/auth/login"
